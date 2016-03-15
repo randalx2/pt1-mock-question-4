@@ -56,11 +56,11 @@ public:
 	}
 
 	void name(){
-		animalName = "Bird";
+		cout << animalName << endl;
 	}
 
 	void does(){
-		action = "Tweets and Flies";
+		cout << action << endl;
 	}
 };
 
@@ -76,11 +76,11 @@ public:
 	}
 
 	void name(){
-		animalName = "Dog";
+		cout << animalName << endl;
 	}
 
 	void does(){
-		action = "Barks and Woofs";
+		cout << action << endl;
 	}
 	
 };
@@ -91,12 +91,12 @@ int main(){
 	//Cannot create objects of abstract classes but can create pointers of abstract classes
 
 	Animal *p1 = new Bird();
-	p1->name;
-	p1->does;
+	p1->name();
+	p1->does();
 
 	Animal *p2 = new Dog();
-	p2->name;
-	p2->does;
+	p2->name();
+	p2->does();
 
 	system("PAUSE");
 	return 0;
