@@ -98,6 +98,9 @@ int main(){
 	p2->name();
 	p2->does();
 
+	delete p1;
+	delete p2;
+
 	system("PAUSE");
 	return 0;
 }
