@@ -98,9 +98,30 @@ int main(){
 	p2->name();
 	p2->does();
 
+	//Demonstrating polymorphism with arrays
+	Animal *pointer[2];
+	
+	Bird b1;  //Use default constructors
+	Dog d1;
+
+	//Fill array with sub class objects by reference
+	pointer[0] = &b1;
+	pointer[1] = &d1;
+
+	cout << "Testing polymorphism with Abstract Pointer array" << endl;
+
+	for (int i = 0; i < 10; i++)
+	{
+		pointer[0]->name();
+		pointer[0]->does();
+		pointer[1]->name();
+		pointer[1]->does();
+    }
+
+
 	delete p1;
 	delete p2;
-
+	
 	system("PAUSE");
 	return 0;
 }
